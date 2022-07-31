@@ -1,6 +1,6 @@
-package com.example.testfive.dao;
+package com.example.testfivegradle.dao;
 
-import com.example.testfive.domain.Message;
+import com.example.testfivegradle.domain.Message;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

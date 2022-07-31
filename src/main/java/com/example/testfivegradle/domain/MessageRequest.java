@@ -1,4 +1,4 @@
-package com.example.testfive.domain;
+package com.example.testfivegradle.domain;
 
 import lombok.Data;
 

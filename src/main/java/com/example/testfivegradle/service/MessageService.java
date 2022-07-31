@@ -1,9 +1,9 @@
-package com.example.testfive.service;
+package com.example.testfivegradle.service;
 
-import com.example.testfive.dao.MessageRepository;
-import com.example.testfive.domain.Message;
-import com.example.testfive.domain.MessageRequest;
-import com.example.testfive.domain.User;
+import com.example.testfivegradle.dao.MessageRepository;
+import com.example.testfivegradle.domain.Message;
+import com.example.testfivegradle.domain.MessageRequest;
+import com.example.testfivegradle.domain.User;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;

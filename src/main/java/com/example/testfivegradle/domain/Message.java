@@ -1,4 +1,4 @@
-package com.example.testfive.domain;
+package com.example.testfivegradle.domain;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;

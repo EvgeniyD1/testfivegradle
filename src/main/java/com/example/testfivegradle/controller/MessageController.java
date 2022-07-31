@@ -1,8 +1,8 @@
-package com.example.testfive.controller;
+package com.example.testfivegradle.controller;
 
-import com.example.testfive.domain.Message;
-import com.example.testfive.domain.MessageRequest;
-import com.example.testfive.service.MessageService;
+import com.example.testfivegradle.domain.Message;
+import com.example.testfivegradle.domain.MessageRequest;
+import com.example.testfivegradle.service.MessageService;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;

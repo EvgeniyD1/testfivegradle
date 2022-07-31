@@ -1,7 +1,7 @@
-package com.example.testfive.controller;
+package com.example.testfivegradle.controller;
 
-import com.example.testfive.domain.User;
-import com.example.testfive.service.UserService;
+import com.example.testfivegradle.domain.User;
+import com.example.testfivegradle.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;

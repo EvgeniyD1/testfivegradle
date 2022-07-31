@@ -1,4 +1,4 @@
-package com.example.testfive.config;
+package com.example.testfivegradle.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;

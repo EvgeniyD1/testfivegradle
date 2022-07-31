@@ -1,6 +1,6 @@
-package com.example.testfive.dao;
+package com.example.testfivegradle.dao;
 
-import com.example.testfive.domain.User;
+import com.example.testfivegradle.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
