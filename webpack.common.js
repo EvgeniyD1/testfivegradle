@@ -2,16 +2,7 @@ const path = require('path');
 const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
-    mode: 'development',
-    entry: path.join(__dirname, 'src', 'main', 'resources', 'static', 'main.js'),
-    devtool: 'source-map',//!!!!
-    devServer: {
-        compress: true,
-        port: 8000,
-        allowedHosts: [
-            'localhost:8080'
-        ]
-    },
+    entry: path.join(__dirname, 'src', 'main', 'resources', 'js', 'main.js'),
     module: {
         rules: [
             {
@@ -55,7 +46,7 @@ module.exports = {
     ],
     resolve: {
         modules: [
-            path.join(__dirname, 'src', 'main', 'resources', 'static'),
+            path.join(__dirname, 'src', 'main', 'resources', 'js'),
             path.join(__dirname, 'node_modules'),
         ],
     }

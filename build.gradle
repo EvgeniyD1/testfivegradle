@@ -2,17 +2,28 @@ plugins {
 	id 'org.springframework.boot' version '2.7.2'
 	id 'io.spring.dependency-management' version '1.0.12.RELEASE'
 	id 'java'
+	id "com.github.node-gradle.node" version "3.1.1"
 }
+
+apply plugin: 'com.github.node-gradle.node'
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '17'
+sourceCompatibility = '11'
 
 configurations {
 	compileOnly {
 		extendsFrom annotationProcessor
 	}
 }
+
+task buildFront(type: YarnTask) {
+	args = ['build']
+}
+
+yarn_install.dependsOn(yarn_cache_clean)
+buildFront.dependsOn(yarn_install)
+processResources.dependsOn(buildFront)
 
 repositories {
 	mavenCentral()

@@ -9,10 +9,10 @@
              v-model="search"
              class="input"
       >
-      <v-btn @click="findOrCreateU">Find Or Create</v-btn>
+      <v-btn @click="findOrCreateU">Log In Or Create</v-btn>
     </v-app-bar>
-    <message-form :user="user" @create="sendMessage"/>
-    <message-list :messages="messages"/>
+    <message-form :user="user" @create="sendMessage" v-if="this.user!==''"/>
+    <message-list :messages="messages" v-if="this.user!==''"/>
   </v-app>
 </template>
 
